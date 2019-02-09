@@ -1,0 +1,82 @@
+﻿<Items>
+  
+
+
+  <Item name="TRAUMAROD" identifier="traumarod" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" description="A round what is used for Albert-01R it is very powerfull against anything be aware to not shoot the walls with it">
+    <Price locationtype="Military" buyprice="2000" />
+    <Price locationtype="Outpost" buyprice="1550" />
+    <Price locationtype="City" buyprice="1500" />
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,384,64,64" />
+    <Sprite texture="weapons.png" sourcerect="1,1,16,9" depth="0.55" />
+    <Body width="8" height="3" density="40" />
+    <Pickable slots="Any" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <Attack structuredamage="680" stun="0.5" targetforce="10">
+        <Affliction identifier="gunshotwound" strength="500" />
+        <Affliction identifier="internaldamage" strength="350" />
+      </Attack>
+    </Projectile>
+  </Item>
+
+
+
+  <Item name="Enhanced Round" identifier="enhancedround" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" description="A round what is used for Albert-01R it is strong against any small creature but be aware to not shoot a wall with it">
+    <Price locationtype="Military" buyprice="1000" />
+    <Price locationtype="Outpost" buyprice="550" />
+    <Price locationtype="City" buyprice="500" />
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,384,64,64" />
+    <Sprite texture="weapons.png" sourcerect="1,1,16,9" depth="0.55" />
+    <Body width="8" height="3" density="40" />
+    <Pickable slots="Any" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <Attack structuredamage="128" stun="0.5" targetforce="10">
+        <Affliction identifier="gunshotwound" strength="120" />
+        <Affliction identifier="internaldamage" strength="55" />
+      </Attack>
+    </Projectile>
+  </Item>
+
+
+
+
+
+
+
+  <Item name="Albert-01R" identifier="albert01" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon" Scale="0.13">
+    <Price locationtype="Military" buyprice="800" />
+    <Price locationtype="Outpost" buyprice="450" />
+    <Price locationtype="City" buyprice="400" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <InventoryIcon texture="albert_bt_inv.png"/>
+    <Sprite texture="albert_bt.png" />
+    <Body width="28" height="20" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="90,10" handle1="-150,-7" />
+    <RangedWeapon barrelpos="14,6" spread="0" unskilledspread="2">
+      <Sound file="Mods/albert/Items/Weapons/ramrod.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="Mods/albert/Items/Weapons/ramrod2.ogg" type="OnUse" range="3000" />
+      <Sound file="Mods/albert/Items/Weapons/ramrod3.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="15" shockwave="false" smoke="false" flames="false" sparks="true" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+      <RequiredItems identifier="enhancedround, traumarod" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="40" />
+    </RangedWeapon>
+    <ItemContainer capacity="3" hideitems="true">
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="2,121,53,22" />
+      <Containable identifiers="enhancedround, traumarod" />
+    </ItemContainer>
+  </Item>
+
+
+
+
+  
+
+
+
+  
+</Items>
+
