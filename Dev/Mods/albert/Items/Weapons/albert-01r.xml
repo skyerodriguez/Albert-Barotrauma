@@ -59,7 +59,7 @@
       <Sound file="Mods/albert/Items/Weapons/ramrod2.ogg" type="OnUse" range="3000" />
       <Sound file="Mods/albert/Items/Weapons/ramrod3.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
-        <Explosion range="150.0" force="15" shockwave="false" smoke="false" flames="false" sparks="true" underwaterbubble="false" camerashake="6.0" />
+        <Explosion range="150.0" force="15" shockwave="false" smoke="false" flames="true" sparks="true" underwaterbubble="false" camerashake="10.0" />
       </StatusEffect>
       <RequiredItems identifier="enhancedround, traumarod" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="40" />

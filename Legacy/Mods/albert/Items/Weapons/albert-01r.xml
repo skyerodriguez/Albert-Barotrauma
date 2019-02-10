@@ -6,7 +6,7 @@
     category="Equipment"
     description="A round what is used for Albert-01R it is very powerfull against anything be aware to not shoot the walls with it"
     interactthroughwalls="true"
-    price="1500"
+    price="2000"
     cargocontainername="Metal Crate"
     tags="smallitem">
 
@@ -26,7 +26,7 @@
     category="Equipment"
     description="A round what is used for Albert-01R it is strong against any small creature but be aware to not shoot a wall with it"
     interactthroughwalls="true"
-    price="500"
+    price="850"
     cargocontainername="Metal Crate"
     tags="smallitem">
 
@@ -44,7 +44,7 @@
   <Item
     name="Albert-01R"
     category="Equipment"
-    price="200"
+    price="220"
     cargocontainername="Metal Crate"
     tags="smallitem,weapon">
 
@@ -64,7 +64,7 @@
     <RangedWeapon barrelpos="14,6" spread="0" unskilledspread="2">
       <Sound file="ramrod3.ogg" type="OnUse" range="3000"/>
       <StatusEffect type="OnUse">
-        <Explosion range="150.0" force="7" shockwave="false" smoke="false" flames="false" sparks="false" camerashake="6.0"/>
+        <Explosion range="150.0" force="15" shockwave="false" smoke="false" flames="true" sparks="true" camerashake="10.0"/>
       </StatusEffect>
       <RequiredItems name="TRAUMAROD,Enhanced Round" type="Contained" msg="Out of ammo"/>
       <RequiredSkill name="Weapons" level="40"/>
